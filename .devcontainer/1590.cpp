@@ -6,6 +6,7 @@ int minSubarray(vector<int>& nums, int p) {
         if(rem==0) return 0;
         map<int,int> mp;
         mp[0] =-1;
+        cout<<"Ho murari"<<endl;
         for(int i=0 ;i<n ;i++){
             sum = (sum + nums[i])%p;
             int remainrem =  (sum%p-rem);
